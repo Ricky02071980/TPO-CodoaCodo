@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Public Sans", sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+    background-color: gray;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Architects Daughter', cursive;
+}
+
+h6 {
+    display: 8px;
+    color: blanchedalmond;
+}
+
+p {
+    color: blanchedalmond
+}
+
+
+/*TRANSICION*/
+
+.header {
+    background-color: black;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+@keyframes example {
+    0% {
+        background-color: grey;
+    }
+    25% {
+        background-color: black;
+    }
+    50% {
+        background-color: grey;
+    }
+    75% {
+        background-color: black;
+    }
+    100% {
+        background-color: grey;
+    }
+}
+
+.grid-container>* {
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+.header {
+    grid-area: header;
+    background-color: rgb(49, 9, 49);
+}
+
+.navbar {
+    grid-area: navbar;
+    background-color: black;
+    color: blanchedalmond;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: black;
+    color: blanchedalmond;
+}
+
+.main {
+    grid-area: main;
+    background-color: black;
+}
+
+.grid-footer {
+    grid-area: footer;
+    background-color: black;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template: "header" 100px "navbar" 50px "main" auto "sidebar" 100px "footer" 100px;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+a:hover {
+    color: burlywood;
+}
+
+@media (min-width: 600px) {
+    .grid-container {
+        grid-template: "header  header" 100px "navbar  navbar" 50px "sidebar main" auto "footer  footer" 100px / 200px auto;
+    }
+}
+
+@media (min-width: 900px) {
+    .grid-container {
+        grid-template: "header  header header" 100px "navbar  main   sidebar" auto "footer  footer footer" 100px / 200px auto 200px;
+    }
+}
+
+
+/*********Media Query******************/
+
+
+/**************************************/
+
+@media screen and (max-width: 600px) {
+    .mapa {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .grid-reseña {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .grid-prox {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h4 {
+        display: none;
+    }
+}
