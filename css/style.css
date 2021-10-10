@@ -111,6 +111,20 @@ a:hover {
     color: burlywood;
 }
 
+div button {
+    border: 3px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+div input {
+    border: 3px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: blanchedalmond;
+}
+
 @media (min-width: 600px) {
     .grid-container {
         grid-template: "header  header" 100px "navbar  navbar" 50px "sidebar main" auto "footer  footer" 100px / 200px auto;
