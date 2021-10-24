@@ -149,6 +149,12 @@ div input {
     }
 }
 
+@media screen and (max-width: 900px) {
+    .mapa {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .grid-reseña {
         display: none;
