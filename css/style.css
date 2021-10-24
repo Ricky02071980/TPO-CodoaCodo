@@ -169,7 +169,19 @@ div input {
     }
 }
 
+@media screen and (max-width: 900px) {
+    .grid-prox {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 600px) {
+    h4 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
     h4 {
         display: none;
     }
